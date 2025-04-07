@@ -115,24 +115,24 @@ export default function LandingPage() {
         </header>
 
         {/* Main Content - Side by Side Layout */}
-        <main className="container mx-auto px-6 py-12 md:py-16 lg:py-24">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <main className="container mx-auto px-4 sm:px-6 py-8 md:py-12 lg:py-24 overflow-hidden">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             {/* Left Side - Text Content */}
-            <div className="w-full lg:w-1/2 lg:pr-8">
+            <div className="w-full lg:w-1/2 lg:pr-4 xl:pr-8">
               {/* Tagline */}
-              <div className="mb-8">
-                <div className="inline-flex items-center px-4 py-1.5 rounded-full interactive-tag">
-                  <Circle className="w-4 h-4 mr-2 fill-current text-amber-500" />
-                  <span className="text-sm font-medium text-amber-500">Interactive learning platform</span>
+              <div className="mb-4 sm:mb-8">
+                <div className="inline-flex items-center px-3 sm:px-4 py-1.5 rounded-full interactive-tag">
+                  <Circle className="w-3 h-3 sm:w-4 sm:h-4 mr-2 fill-current text-amber-500" />
+                  <span className="text-xs sm:text-sm font-medium text-amber-500">Interactive learning platform</span>
                 </div>
               </div>
 
-              <div className="mb-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-                  <span className="gradient-heading inline-block mb-2">Turn passive video watching</span>
-                  <span className="gradient-heading inline-block mb-2">into an active, search-driven,</span>
-                  <span className="gradient-heading inline-block mb-2">practice-oriented</span>
-                  <span className="gradient-heading inline-block mb-2">learning journey</span>
+              <div className="mb-8 sm:mb-12">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 sm:mb-8">
+                  <span className="gradient-heading inline-block mb-1 sm:mb-2">Turn passive video watching</span> <br className="hidden sm:inline" />
+                  <span className="gradient-heading inline-block mb-1 sm:mb-2">into an active, search-driven,</span> <br className="hidden sm:inline" />
+                  <span className="gradient-heading inline-block mb-1 sm:mb-2">practice-oriented</span> <br className="hidden sm:inline" />
+                  <span className="gradient-heading inline-block mb-1 sm:mb-2">learning journey</span>
                 </h1>
 
                 <div className="mt-10">
@@ -211,8 +211,8 @@ export default function LandingPage() {
                           />
                         </div>
                         <div className="p-6 bg-black">
-                          <h3 className="text-xl font-bold mb-2 will-change-auto">{course.title}</h3>
-                          <p className="text-[#AAAAAA] will-change-auto">{course.description}</p>
+                          <h3 className="text-xl font-bold mb-2 will-change-auto line-clamp-2">{course.title}</h3>
+                          <p className="text-[#AAAAAA] will-change-auto line-clamp-3 text-sm md:text-base">{course.description}</p>
                         </div>
 
                         {/* Interactive indicator for front card */}
